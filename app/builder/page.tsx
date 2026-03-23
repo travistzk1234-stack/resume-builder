@@ -104,8 +104,8 @@ function Btn({ children, onClick, variant="secondary", disabled, style, size="md
   const base: any = { padding:pad,fontSize:fs,fontWeight:500,borderRadius:10,cursor:disabled?"not-allowed":"pointer",display:"inline-flex",alignItems:"center",justifyContent:"center",gap:6,border:"none",transition:"all 0.15s",opacity:disabled?0.5:1,fontFamily:"inherit",letterSpacing:"-0.1px" };
   const variants: any = {
     primary: { background:C.text,color:"#fff" },
-    secondary: { background:"none",border:`1px solid ${C.border}`,color:C.text,background:C.bgSecondary },
-  };
+   secondary: { border:`1px solid ${C.border}`,color:C.text,background:C.bgSecondary },
+   
   return <button onClick={disabled?undefined:onClick} style={{ ...base,...variants[variant],...style }}>{children}</button>;
 }
 
