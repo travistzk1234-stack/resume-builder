@@ -1,4 +1,3 @@
-// v2
 'use client';
 
 import { useState, useRef } from "react";
